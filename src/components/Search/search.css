@@ -1,0 +1,14 @@
+.search {
+    display: flex;
+    justify-content: center;
+}
+
+
+.search input {
+    width: 100%;
+    padding: 12px 5px;
+    font-size: 1em;
+    margin: 20px 0px;
+    border: 1px solid #9b9a9a;
+    border-radius: 5px;
+}

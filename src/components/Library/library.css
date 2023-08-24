@@ -1,0 +1,43 @@
+.library {
+    overflow-y: hidden;
+    overflow-x: hidden;
+    height: 100vh;
+    width: 100%;
+}
+
+.library-song {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 6px;
+    cursor: pointer;
+    transition: opacity 0.3s ease;  
+    opacity: 0.6;   
+}
+
+.library-song:hover, 
+.library-song.selected {
+    background: #f2f2f2;
+    opacity: 1;
+}
+
+.library-song img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    margin-right: 20px;
+     border-radius: 5px;
+}
+
+.song-description h3, 
+.song-description h4 {
+    margin: 0;
+}
+
+.song-description h3{
+    font-size: 1em;
+}
+
+.song-description h4{
+    font-size: 0.8em;
+    color: #535353;
+}

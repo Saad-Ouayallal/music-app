@@ -1,0 +1,69 @@
+.player {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.time-control, .play-control {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.time-control{
+    width: 100%;
+}
+
+.play-control{
+    width: 150px;
+}
+
+.time-control input[type="range"] {
+    flex: 1;
+    margin: 0 10px;
+}
+
+.play-control button {
+    padding: 10px 15px;
+    border: none;
+    color: #fff;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.play-control button img{
+    height: 15px;
+    width: 15px;
+}
+
+.play-control button:hover {
+    background: #555;
+}
+
+
+@media (min-width: 768px) {
+    .time-control{
+    width: 450px;
+}
+
+    .play-control{
+        width: 200px;
+    }
+
+    .play-control button {
+    padding: 10px 15px;
+    border: none;
+    background: #333;
+    color: #fff;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.play-control button img{
+    height: 15px;
+    width: 15px;
+    filter: invert();
+}
+}

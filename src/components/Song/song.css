@@ -1,0 +1,47 @@
+.song-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.song-container img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    opacity: 0.8;
+    transform: scale(0.95);
+}
+
+.song-container:hover img {
+    opacity: 1;
+    transform: scale(1);  /* Grow to original size on hover */
+}
+
+.song-container h2{
+    margin: 0;
+    font-size: 1.1em;
+} 
+.song-container h3 {
+    margin: 0;
+    font-size: 0.9em;
+    color: rgb(84, 84, 83);
+}
+
+
+
+@media (min-width: 768px) {
+    .song-container img {
+            width: 400px;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 15px;
+            margin-bottom: 20px;
+            transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+            opacity: 0.8;
+            transform: scale(0.95);
+        }
+}
